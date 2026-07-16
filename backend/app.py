@@ -528,6 +528,7 @@ def _parse_date(date_str: str) -> Optional[str]:
 
 LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "minimax").lower()
 MINIMAX_API_KEY = os.environ.get("MINIMAX_API_KEY", "")
+MINIMAX_BASE_URL = os.environ.get("MINIMAX_BASE_URL", "https://api.minimax.io/v1")
 KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 
 llm = None
@@ -555,7 +556,7 @@ if llm is None and MINIMAX_API_KEY:
         llm = ChatOpenAI(
             model="MiniMax-M3",
             api_key=MINIMAX_API_KEY,
-            base_url="https://api.minimax.io/v1",
+            base_url=MINIMAX_BASE_URL,
             temperature=0.2,
             max_tokens=4096,
         )
