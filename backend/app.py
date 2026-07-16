@@ -530,11 +530,6 @@ LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "minimax").lower()
 MINIMAX_API_KEY = os.environ.get("MINIMAX_API_KEY", "")
 KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 
-# Fallback key（仅用于开发测试）
-_FALLBACK_KEY = "sk-cp-EkenCD3ZkKwcUaRaoN0lGmrO8uIMyoWtfyJoxreCKx-cCX_DOn1sOBNGWg5ERdpBGRR2Zk_ztpS5gyaZ3QH-S4DGXxz2kClDFfD-lXsjjc3_74VkNpXmXfw"
-if not MINIMAX_API_KEY:
-    MINIMAX_API_KEY = _FALLBACK_KEY
-
 llm = None
 llm_name = "fallback"
 
