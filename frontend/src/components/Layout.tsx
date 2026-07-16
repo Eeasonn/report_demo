@@ -37,6 +37,7 @@ const AppLayout: React.FC = () => {
 
   const [collapsed, setCollapsed] = useState(false);
   const [reportWidth, setReportWidth] = useState(DEFAULT_REPORT_WIDTH);
+  const [isResizing, setIsResizing] = useState(false);
   const isDragging = useRef(false);
   const startX = useRef(0);
   const startWidth = useRef(DEFAULT_REPORT_WIDTH);
@@ -46,18 +47,30 @@ const AppLayout: React.FC = () => {
     ensureInitialConversation();
   }, []);
 
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+  const beginDrag = useCallback((clientX: number) => {
     if (!currentReport) return;
     isDragging.current = true;
-    startX.current = e.clientX;
+    setIsResizing(true);
+    startX.current = clientX;
     startWidth.current = reportWidth;
     document.body.style.cursor = 'col-resize';
     document.body.style.userSelect = 'none';
   }, [currentReport, reportWidth]);
 
-  const handleMouseMove = useCallback((e: MouseEvent) => {
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    beginDrag(e.clientX);
+  }, [beginDrag]);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    if (!currentReport) return;
+    e.preventDefault();
+    beginDrag(e.touches[0].clientX);
+  }, [currentReport, beginDrag]);
+
+  const onDragMove = useCallback((clientX: number) => {
     if (!isDragging.current) return;
-    const delta = startX.current - e.clientX;
+    const delta = startX.current - clientX;
     const newWidth = Math.min(
       MAX_REPORT_WIDTH,
       Math.max(MIN_REPORT_WIDTH, startWidth.current + delta)
@@ -65,21 +78,44 @@ const AppLayout: React.FC = () => {
     setReportWidth(newWidth);
   }, []);
 
-  const handleMouseUp = useCallback(() => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    onDragMove(e.clientX);
+  }, [onDragMove]);
+
+  const handleTouchMove = useCallback((e: TouchEvent) => {
+    if (!isDragging.current) return;
+    e.preventDefault();
+    onDragMove(e.touches[0].clientX);
+  }, [onDragMove]);
+
+  const endDrag = useCallback(() => {
     if (!isDragging.current) return;
     isDragging.current = false;
+    setIsResizing(false);
     document.body.style.cursor = '';
     document.body.style.userSelect = '';
   }, []);
 
+  const handleMouseUp = useCallback(() => {
+    endDrag();
+  }, [endDrag]);
+
+  const handleTouchEnd = useCallback(() => {
+    endDrag();
+  }, [endDrag]);
+
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [handleMouseMove, handleMouseUp]);
+  }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   const menuItems = [
     { key: 'chat', icon: <MessageOutlined />, label: '智能对话' },
@@ -269,14 +305,16 @@ const AppLayout: React.FC = () => {
           {currentReport && (
             <div
               onMouseDown={handleMouseDown}
+              onTouchStart={handleTouchStart}
               className="resize-handle"
               style={{
-                width: 6,
+                width: 16,
                 cursor: 'col-resize',
                 background: 'transparent',
                 position: 'relative',
                 zIndex: 20,
                 flexShrink: 0,
+                touchAction: 'none',
               }}
             >
               <div
@@ -284,9 +322,10 @@ const AppLayout: React.FC = () => {
                   position: 'absolute',
                   top: 0,
                   bottom: 0,
-                  left: 2,
+                  left: '50%',
+                  transform: 'translateX(-50%)',
                   width: 2,
-                  background: '#e0e0e0',
+                  background: isResizing ? '#1677ff' : '#e0e0e0',
                   transition: 'background 0.2s',
                 }}
                 className="resize-handle-line"
@@ -302,7 +341,7 @@ const AppLayout: React.FC = () => {
               background: '#fafafa',
               overflow: 'auto',
               height: 'calc(100vh - 56px)',
-              transition: 'width 0.3s ease, min-width 0.3s ease',
+              transition: isResizing ? 'none' : 'width 0.3s ease, min-width 0.3s ease',
             }}
           >
             {currentReport && <ReportViewer />}
