@@ -30,7 +30,9 @@ app.add_middleware(
 
 # ── 数据加载 ─────────────────────────────────────────────────────
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if not os.path.exists(os.path.join(BASE_DIR, "config", "reports.json")):
+    BASE_DIR = os.path.dirname(BASE_DIR)
 
 
 def load_json(path: str) -> Any:
