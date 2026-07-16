@@ -192,3 +192,13 @@ body {
 .ant-layout-sider {
   background: #fff !important;
 }
+
+/* Resizable splitter handle */
+.resize-handle-line {
+  transition: background 0.2s;
+}
+
+.resize-handle:hover .resize-handle-line,
+.resize-handle-line:hover {
+  background: #1677ff !important;
+}
