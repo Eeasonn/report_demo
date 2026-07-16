@@ -36,6 +36,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           static_site_generator: vite
+          enablement: false
 
       - name: Build frontend
         env:
