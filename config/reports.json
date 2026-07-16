@@ -1,0 +1,240 @@
+{
+  "reports": [
+    {
+      "id": "R001",
+      "code": "MEA_PHONE_DAILY",
+      "name": "中东非洲手机日销",
+      "category": "手机",
+      "region": "MEA",
+      "regionName": "中东非洲",
+      "type": "daily",
+      "description": "中东非洲地区手机产品每日销量战报",
+      "template": {
+        "style": "series",
+        "sections": [
+          {"title": "【折叠】", "products": ["Mate X7", "Mate XT"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Pura 系列】", "products": ["Pura 80", "Pura 80 Pro", "Pura 80 Ultra"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Mate 系列】", "products": ["Mate 80 Pro"], "showTotal": false, "showYoY": false, "showInventory": false},
+          {"title": "【nova 系列】", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Y 系列】", "products": ["nova Y73", "nova Y63", "nova Y73s"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Mate 80 Pro", "Pura 80", "nova 15", "nova 14i", "nova 15 Max"]
+        }
+      },
+      "permission": ["MEA_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R002",
+      "code": "LATAM_PHONE_DAILY",
+      "name": "拉美手机日销",
+      "category": "手机",
+      "region": "LATAM",
+      "regionName": "拉美",
+      "type": "daily",
+      "description": "拉美地区手机产品每日销量战报",
+      "template": {
+        "style": "series",
+        "sections": [
+          {"title": "【折叠】", "products": ["Mate X7", "Mate XT"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Pura 系列】", "products": ["Pura 80", "Pura 80 Pro", "Pura 80 Ultra"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【nova 系列】", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Pura 80", "nova 15 Max"]
+        }
+      },
+      "permission": ["LATAM_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R003",
+      "code": "EU_PHONE_DAILY",
+      "name": "欧洲手机日销",
+      "category": "手机",
+      "region": "EU",
+      "regionName": "欧洲",
+      "type": "daily",
+      "description": "欧洲地区手机产品每日销量战报",
+      "template": {
+        "style": "series",
+        "sections": [
+          {"title": "【折叠】", "products": ["Mate X7", "Mate XT"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Pura 系列】", "products": ["Pura 80", "Pura 80 Pro", "Pura 80 Ultra"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Mate 系列】", "products": ["Mate 80 Pro"], "showTotal": false, "showYoY": false, "showInventory": false},
+          {"title": "【nova 系列】", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Mate 80 Pro", "Pura 80"]
+        }
+      },
+      "permission": ["EU_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R004",
+      "code": "APAC_PHONE_DAILY",
+      "name": "亚太手机日销",
+      "category": "手机",
+      "region": "APAC",
+      "regionName": "亚太",
+      "type": "daily",
+      "description": "亚太地区手机产品每日销量战报",
+      "template": {
+        "style": "series",
+        "sections": [
+          {"title": "【折叠】", "products": ["Mate X7", "Mate XT"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Pura 系列】", "products": ["Pura 80", "Pura 80 Pro", "Pura 80 Ultra"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【nova 系列】", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Y 系列】", "products": ["nova Y73", "nova Y63", "nova Y73s"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Pura 80", "nova 15 Max"]
+        }
+      },
+      "permission": ["APAC_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R005",
+      "code": "CN_PHONE_DAILY",
+      "name": "中国手机日销",
+      "category": "手机",
+      "region": "CN",
+      "regionName": "中国",
+      "type": "daily",
+      "description": "中国地区手机产品每日销量战报",
+      "template": {
+        "style": "comprehensive",
+        "sections": [
+          {"title": "手机", "products": ["Mate X7", "Mate XT", "Pura 80", "Pura 80 Pro", "Pura 80 Ultra", "Mate 80 Pro", "nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i", "nova Y73", "nova Y63", "nova Y73s"], "showTotal": true, "showYoY": true, "showInventory": true}
+        ],
+        "subSections": [
+          {"title": "其中，旗舰机", "products": ["Mate X7", "Mate XT", "Pura 80 Ultra"], "showInventory": true},
+          {"title": "其中，nova手机", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showInventory": true}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Mate 80 Pro", "Pura 80", "nova 15", "nova 14i", "nova 15 Max"]
+        }
+      },
+      "permission": ["CN_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R006",
+      "code": "GLOBAL_EARPHONE_DAILY",
+      "name": "全球耳机日销",
+      "category": "耳机",
+      "region": "GLOBAL",
+      "regionName": "全球",
+      "type": "daily",
+      "description": "全球耳机产品每日销量战报",
+      "template": {
+        "style": "category",
+        "sections": [
+          {"title": "【开放式】", "products": ["FreeClip 2", "FreeClip", "FreeArc"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【入耳＆半入耳式】", "products": ["FreeBuds SE 4 ANC", "FreeBuds Pro 5", "FreeBuds Pro 4", "FreeBuds 6", "FreeBuds 7i", "FreeBuds SE 3", "FreeBuds SE 2"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["FreeClip 2", "FreeBuds Pro 5", "FreeBuds 6"]
+        }
+      },
+      "permission": ["GLOBAL_USERS"]
+    },
+    {
+      "id": "R007",
+      "code": "MEA_WEARABLE_DAILY",
+      "name": "中东非洲穿戴日销",
+      "category": "穿戴",
+      "region": "MEA",
+      "regionName": "中东非洲",
+      "type": "daily",
+      "description": "中东非洲地区穿戴产品每日销量战报",
+      "template": {
+        "style": "comprehensive",
+        "sections": [
+          {"title": "【手表】", "products": ["Watch 5", "Watch 4", "Watch GT 5", "Watch GT 4"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【手环】", "products": ["Band 10", "Band 9", "Band 8"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Watch 5", "Watch GT 5", "Band 10"]
+        }
+      },
+      "permission": ["MEA_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R008",
+      "code": "LATAM_COMPREHENSIVE_DAILY",
+      "name": "拉美综合日销",
+      "category": "综合",
+      "region": "LATAM",
+      "regionName": "拉美",
+      "type": "daily",
+      "description": "拉美地区手机、耳机、穿戴综合日销战报",
+      "template": {
+        "style": "comprehensive",
+        "sections": [
+          {"title": "手机", "products": ["Mate X7", "Mate XT", "Pura 80", "Pura 80 Pro", "nova 15", "nova 15 Max"], "showTotal": true, "showYoY": true, "showInventory": true},
+          {"title": "耳机", "products": ["FreeClip 2", "FreeClip", "FreeBuds Pro 5", "FreeBuds 6"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "穿戴", "products": ["Watch 5", "Watch GT 5", "Band 10"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "FreeClip 2", "Watch 5"]
+        }
+      },
+      "permission": ["LATAM_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R009",
+      "code": "EU_COMPREHENSIVE_WEEKLY",
+      "name": "欧洲综合周销",
+      "category": "综合",
+      "region": "EU",
+      "regionName": "欧洲",
+      "type": "weekly",
+      "description": "欧洲地区手机、耳机、穿戴综合周销战报",
+      "template": {
+        "style": "comprehensive",
+        "sections": [
+          {"title": "手机", "products": ["Mate X7", "Mate XT", "Pura 80", "Pura 80 Pro", "Mate 80 Pro", "nova 15", "nova 15 Max"], "showTotal": true, "showYoY": true, "showInventory": true},
+          {"title": "耳机", "products": ["FreeClip 2", "FreeClip", "FreeBuds Pro 5", "FreeBuds 6", "FreeBuds 7i"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "穿戴", "products": ["Watch 5", "Watch 4", "Watch GT 5", "Band 10", "Band 9"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "FreeClip 2", "Watch 5"]
+        }
+      },
+      "permission": ["EU_USERS", "GLOBAL_USERS"]
+    },
+    {
+      "id": "R010",
+      "code": "GLOBAL_PHONE_WEEKLY",
+      "name": "全球手机周销",
+      "category": "手机",
+      "region": "GLOBAL",
+      "regionName": "全球",
+      "type": "weekly",
+      "description": "全球手机产品周销战报",
+      "template": {
+        "style": "series",
+        "sections": [
+          {"title": "【折叠】", "products": ["Mate X7", "Mate XT"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Pura 系列】", "products": ["Pura 80", "Pura 80 Pro", "Pura 80 Ultra"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Mate 系列】", "products": ["Mate 80 Pro"], "showTotal": false, "showYoY": false, "showInventory": false},
+          {"title": "【nova 系列】", "products": ["nova 15", "nova 15 Max", "nova 14", "nova 14 Pro", "nova 14i"], "showTotal": true, "showYoY": true, "showInventory": false},
+          {"title": "【Y 系列】", "products": ["nova Y73", "nova Y63", "nova Y73s"], "showTotal": true, "showYoY": true, "showInventory": false}
+        ],
+        "focusSection": {
+          "title": "重点机型",
+          "products": ["Mate XT", "Mate X7", "Mate 80 Pro", "Pura 80", "nova 15 Max"]
+        }
+      },
+      "permission": ["GLOBAL_USERS"]
+    }
+  ]
+}

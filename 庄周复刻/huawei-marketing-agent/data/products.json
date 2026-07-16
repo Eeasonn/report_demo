@@ -1,0 +1,379 @@
+{
+  "_metadata": {
+    "last_updated": "2026-07-07",
+    "data_source": "互联网公开信息",
+    "note": "本知识库基于2026年7月前的公开信息整理，所有产品信息均来自官方发布或权威媒体报道"
+  },
+  "huawei": {
+    "pura_series": [
+      {
+        "model": "Pura 90 Pro Max",
+        "launch_date": "2026-04-20",
+        "price_range": "6499元起",
+        "chip": "麒麟9030S",
+        "screen": "6.87英寸 1.5K OLED直屏, 1-120Hz LTPO, 第二代昆仑玻璃",
+        "camera": "50MP可变光圈主摄 + 2亿像素潜望式长焦 + 50MP超广角 + 红枫原色镜头",
+        "battery": "6500mAh, 100W有线快充, 50W无线快充",
+        "os": "HarmonyOS 6.1",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "全系直屏设计",
+          "2亿像素潜望式超级长焦",
+          "第二代红枫原色影像（色彩准确度提升43%）",
+          "AI拍照姿势推荐",
+          "橘子海渐变配色",
+          "双色渐变金属中框"
+        ],
+        "marketing_slogan": "2亿智拍新时代",
+        "target_audience": "影像发烧友、专业摄影用户、追求极致体验的消费者",
+        "series_positioning": "影像旗舰（Ultra版本取消，Pro Max为顶配）"
+      },
+      {
+        "model": "Pura 90 Pro",
+        "launch_date": "2026-04-20",
+        "price_range": "5499元起",
+        "chip": "麒麟9030S",
+        "screen": "6.8英寸 1.5K OLED直屏, 120Hz",
+        "camera": "50MP可变光圈主摄 + 2亿像素潜望长焦 + 50MP超广角 + 红枫原色",
+        "battery": "6000mAh, 100W有线快充, 50W无线快充",
+        "os": "HarmonyOS 6.1",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "全系直屏",
+          "2亿像素潜望长焦",
+          "第二代红枫原色影像",
+          "AI智拍功能"
+        ],
+        "marketing_slogan": "2亿智拍新时代",
+        "target_audience": "影像爱好者、高端消费者",
+        "series_positioning": "影像旗舰"
+      },
+      {
+        "model": "Pura 90",
+        "launch_date": "2026-04-20",
+        "price_range": "4699元起",
+        "chip": "麒麟9010S",
+        "screen": "6.58英寸 1.5K OLED直屏, 120Hz",
+        "camera": "50MP主摄 + 12MP潜望长焦 + 12MP超广角",
+        "battery": "6000mAh, 100W有线快充, 50W无线快充",
+        "os": "HarmonyOS 6.1",
+        "memory": "12GB RAM + 256GB/512GB ROM",
+        "key_features": [
+          "全系直屏",
+          "第二代红枫原色影像",
+          "侧边指纹识别"
+        ],
+        "marketing_slogan": "2亿智拍新时代",
+        "target_audience": "年轻消费者、追求性价比的影像爱好者",
+        "series_positioning": "影像旗舰入门"
+      },
+      {
+        "model": "Pura 80 Ultra",
+        "launch_date": "2025-06-10",
+        "price_range": "9999元起",
+        "chip": "麒麟9020 (5nm, 八核)",
+        "screen": "6.8英寸 LTPO OLED, 2848x1276, 1-120Hz, 1440Hz PWM调光, 3000nit",
+        "camera": "50MP 1英寸超大底主摄(F1.6~F4.0可变光圈) + 40MP超广角 + 50MP潜望长焦(3.7x) + 12.5MP长焦(9.4x) + 1.5MP红枫原色",
+        "battery": "6000mAh, 100W有线快充, 80W无线快充",
+        "os": "HarmonyOS 5.1",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "一镜双目拍摄模组",
+          "双层串联OLED屏幕(3500nit)",
+          "AI超高速抓拍(120帧/秒连拍)",
+          "SuperPixGain HDR 2.0",
+          "红枫原色影像",
+          "XMAGE影像技术",
+          "思特威SC5A0CS 1英寸超大底"
+        ],
+        "marketing_slogan": "先锋影像，美学旗舰",
+        "target_audience": "影像爱好者、专业摄影用户、高端商务人群",
+        "series_positioning": "影像旗舰（华为最后一代Ultra）"
+      },
+      {
+        "model": "Pura 70 Ultra",
+        "launch_date": "2024-04-18",
+        "price_range": "9999元起",
+        "chip": "麒麟9010",
+        "screen": "6.8英寸 LTPO OLED, 1.5K, 120Hz",
+        "camera": "50MP 1英寸超大底(旋动伸缩镜头, F1.6~F4.0可变光圈) + 40MP超广角 + 50MP潜望长焦(3.5x)",
+        "battery": "5200mAh, 100W有线快充, 80W无线快充",
+        "os": "HarmonyOS 4.2 / HarmonyOS NEXT",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "业界首创旋动伸缩镜头",
+          "1英寸大底传感器",
+          "XD Motion运动引擎",
+          "双卫星通信"
+        ],
+        "marketing_slogan": "先锋影像，美学旗舰",
+        "target_audience": "影像爱好者、高端商务人群",
+        "series_positioning": "影像旗舰"
+      }
+    ],
+    "mate_series": [
+      {
+        "model": "Mate 90 Pro Max (预计)",
+        "launch_date": "2026-09-预计",
+        "price_range": "预计8999元起",
+        "chip": "麒麟2026（麒麟9050 Pro）- 韬定律逻辑折叠技术",
+        "screen": "6.9英寸 双层OLED, 2K, 120Hz, LTPO",
+        "camera": "50MP可变光圈主摄 + 2亿像素潜望长焦 + 50MP超广角 + 红枫原色二代",
+        "battery": "预计6000mAh+, 100W有线快充, 80W无线快充",
+        "os": "HarmonyOS 7.0（纯血鸿蒙7正式版）",
+        "memory": "16GB/20GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "首发麒麟2026芯片 - 全球首款量产逻辑折叠技术芯片",
+          "韬定律：晶体管密度238M/mm²（提升53.5%）",
+          "P核能效提升41%，主频3.1GHz",
+          "鸿蒙7正式版首发",
+          "双层OLED屏幕（顶配独享）",
+          "软硬件全链路创新协同"
+        ],
+        "marketing_slogan": "史上最强大的Mate（预计）",
+        "target_audience": "商务精英、科技发烧友、华为生态深度用户",
+        "series_positioning": "全能旗舰，年度最强旗舰",
+        "note": "2026年7月6日确认正在进行芯片装测，预计9月发布，与iPhone 18 Pro同期正面对决"
+      },
+      {
+        "model": "Mate 80 Pro",
+        "launch_date": "2025-11-25",
+        "price_range": "6999元起",
+        "chip": "麒麟9030 Pro",
+        "screen": "6.75英寸 OLED, 1.5K, 120Hz, 第二代玄武强化昆仑玻璃",
+        "camera": "50MP主摄(可变光圈) + 40MP超广角 + 48MP 4x微距长焦 + 红枫原色镜头",
+        "battery": "5750mAh, 100W有线快充, 80W无线快充",
+        "os": "EMUI 15.0 / HarmonyOS NEXT",
+        "memory": "16GB RAM + 512GB ROM",
+        "key_features": [
+          "麒麟9030 Pro芯片",
+          "第二代红枫镜头",
+          "IP68/IP69防尘防水",
+          "3D人脸识别+侧边指纹"
+        ],
+        "marketing_slogan": "史上最强大的Mate",
+        "target_audience": "商务精英、全能旗舰用户",
+        "series_positioning": "全能旗舰"
+      },
+      {
+        "model": "Mate 70 Pro+",
+        "launch_date": "2024-11-26",
+        "price_range": "8999元起",
+        "chip": "麒麟9020",
+        "screen": "6.9英寸 LTPO OLED, 1.5K全等深四微曲屏, 120Hz",
+        "camera": "50MP超大底主摄(可变光圈) + 40MP超广角 + 48MP潜望长焦 + 红枫原色",
+        "battery": "5700mAh, 100W有线快充, 80W无线快充",
+        "os": "HarmonyOS NEXT（纯血鸿蒙首发）",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "纯血鸿蒙NEXT首发",
+          "红枫原色影像",
+          "第二代玄武强化昆仑玻璃"
+        ],
+        "marketing_slogan": "史上最强大的Mate",
+        "target_audience": "商务精英、华为生态深度用户",
+        "series_positioning": "全能旗舰"
+      }
+    ],
+    "brand_keywords": [
+      "遥遥领先",
+      "先锋计划",
+      "纯血鸿蒙",
+      "XMAGE影像",
+      "昆仑玻璃",
+      "卫星通信",
+      "红枫原色",
+      "可变光圈",
+      "玄武架构",
+      "韬定律",
+      "逻辑折叠技术",
+      "2亿智拍",
+      "聚能新生"
+    ]
+  },
+  "competitors": {
+    "apple": [
+      {
+        "model": "iPhone 18 Pro Max",
+        "launch_date": "2026-09-预计",
+        "price_range": "预计10999元起",
+        "chip": "A20 Pro（台积电2nm GAA工艺）",
+        "screen": "6.9英寸 LTPO OLED, 120Hz, 灵动岛缩小35%",
+        "camera": "48MP主摄(物理可变光圈f/1.4-f/4.0, 三星三层堆叠传感器) + 48MP超广角 + 48MP潜望长焦",
+        "battery": ">5000mAh, 45W有线快充, 25W无线快充",
+        "os": "iOS 27",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "全球首款商用2nm移动芯片A20 Pro",
+          "CPU/GPU性能提升15%，功耗降低25-30%",
+          "物理可变光圈主摄（首次）",
+          "灵动岛缩小35%（部分Face ID屏下化）",
+          "C2自研5G基带，支持卫星直连",
+          "16核NPU，支持2800亿参数AI模型"
+        ],
+        "marketing_slogan": "Pro 级实力，再进一步",
+        "target_audience": "高端iOS用户、创意专业人士",
+        "series_positioning": "iPhone顶级旗舰"
+      },
+      {
+        "model": "iPhone 17 Pro Max",
+        "launch_date": "2025-09-20",
+        "price_range": "9999元起(256GB)",
+        "chip": "A18 Pro (3nm)",
+        "screen": "6.9英寸 LTPO OLED, 2868x1320, 120Hz",
+        "camera": "48MP主摄 + 48MP超广角 + 12MP潜望长焦(5x) + 激光雷达",
+        "battery": "4685mAh, 27W有线快充, 25W无线快充",
+        "os": "iOS 18",
+        "memory": "8GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "Apple Intelligence AI",
+          "相机控制按钮",
+          "5倍光学变焦",
+          "钛金属机身"
+        ],
+        "marketing_slogan": "Pro 级实力，再进一步",
+        "target_audience": "高端iOS用户",
+        "series_positioning": "iPhone顶级旗舰"
+      }
+    ],
+    "xiaomi": [
+      {
+        "model": "小米16 Ultra (预计)",
+        "launch_date": "2025-10/2026-03-预计",
+        "price_range": "预计6499元起",
+        "chip": "骁龙8 Elite Gen5",
+        "screen": "6.8英寸 2K AMOLED, 120Hz, LTPO",
+        "camera": "50MP徕卡主摄(1英寸) + 2亿像素徕卡长焦 + 50MP徕卡超广角",
+        "battery": "6000mAh+, 90W有线快充, 80W无线快充",
+        "os": "HyperOS 3.0",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "徕卡影像联名",
+          "2亿像素超长焦",
+          "专业摄影套装"
+        ],
+        "marketing_slogan": "徕卡光学，让真实有层次",
+        "target_audience": "影像发烧友、摄影爱好者",
+        "series_positioning": "影像Ultra旗舰"
+      },
+      {
+        "model": "小米15 Ultra",
+        "launch_date": "2025-03-03",
+        "price_range": "6499元起",
+        "chip": "骁龙8至尊版 (3nm)",
+        "screen": "6.73英寸 LTPO AMOLED, 3200x1440(2K), 120Hz",
+        "camera": "50MP徕卡主摄(1英寸LYT-900) + 50MP徕卡超广角 + 50MP徕卡长焦(3x) + 200MP徕卡超长焦(4.3x)",
+        "battery": "6000mAh, 90W有线快充, 80W无线快充",
+        "os": "HyperOS 2.0",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "徕卡影像联名",
+          "1英寸超大底",
+          "200MP超长焦",
+          "卫星通信"
+        ],
+        "marketing_slogan": "徕卡光学，让真实有层次",
+        "target_audience": "影像发烧友",
+        "series_positioning": "影像Ultra旗舰"
+      }
+    ],
+    "oppo": [
+      {
+        "model": "OPPO Find X9 Ultra",
+        "launch_date": "2026-04-21",
+        "price_range": "6999元起",
+        "chip": "骁龙8 Elite Gen5",
+        "screen": "6.82英寸 2K LTPO AMOLED, 144Hz, 510PPI",
+        "camera": "50MP主摄(索尼LYT-901, 1/1.12英寸, f/1.5) + 2亿像素潜望长焦(OV52A) + 50MP超广角 + 50MP第二潜望长焦",
+        "battery": "7050mAh, 100W SuperVOOC, 50W无线快充",
+        "os": "ColorOS 16",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "哈苏双2亿镜头",
+          "10倍光学变焦",
+          "1/1.12英寸超大底LYT-901",
+          "7050mAh超大电池",
+          "第二代丹霞色彩还原镜头"
+        ],
+        "marketing_slogan": "影像，超越所见",
+        "target_audience": "影像发烧友、专业摄影用户",
+        "series_positioning": "影像Ultra旗舰"
+      },
+      {
+        "model": "OPPO Find X8 Ultra",
+        "launch_date": "2025-04-16",
+        "price_range": "6499元起",
+        "chip": "骁龙8至尊版 (3nm)",
+        "screen": "6.82英寸 LTPO AMOLED, 3168x1440(2K), 120Hz",
+        "camera": "50MP主摄(1英寸LYT-900) + 50MP潜望长焦(3x) + 50MP潜望长焦(6x) + 50MP超广角 + 哈苏色彩",
+        "battery": "6100mAh, 100W SuperVOOC, 50W无线快充",
+        "os": "ColorOS 15",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "哈苏影像系统",
+          "双潜望长焦",
+          "1英寸超大底"
+        ],
+        "marketing_slogan": "影像，超越所见",
+        "target_audience": "影像爱好者",
+        "series_positioning": "影像Ultra旗舰"
+      }
+    ],
+    "vivo": [
+      {
+        "model": "vivo X300 Ultra",
+        "launch_date": "2026-03-30",
+        "price_range": "6999元起",
+        "chip": "骁龙8 Elite Gen5",
+        "screen": "6.8-6.85英寸 京东方2K直屏, LTPO 1-120Hz, 超高频PWM调光",
+        "camera": "2亿像素主摄(索尼LYT-901, 1/1.12英寸, 35mm人文焦段) + 2亿像素潜望长焦(三星HPB, 85mm, 3.5x) + 50MP超广角(LYT-818)",
+        "battery": "6600mAh硅碳电池, 100W有线快充, 40W无线快充",
+        "os": "OriginOS 6",
+        "memory": "16GB RAM + 512GB/1TB ROM",
+        "key_features": [
+          "双2亿像素蔡司镜头",
+          "35mm人文黄金焦段主摄",
+          "200mm+400mm双增距镜",
+          "CIPA 7.0防抖",
+          "4K 120fps 10-bit Log",
+          "V单——可打电话的专业相机"
+        ],
+        "marketing_slogan": "V单——可打电话的专业相机",
+        "target_audience": "专业摄影用户、影像发烧友、视频创作者",
+        "series_positioning": "专业影像Ultra旗舰"
+      },
+      {
+        "model": "vivo X200 Ultra",
+        "launch_date": "2025-04-21",
+        "price_range": "6499元起",
+        "chip": "骁龙8至尊版 (3nm)",
+        "screen": "6.82英寸 LTPO AMOLED, 3168x1440(2K), 120Hz",
+        "camera": "50MP主摄(LYT-818, 1/1.28英寸) + 50MP超广角 + 200MP潜望长焦(85mm, HP9)",
+        "battery": "6000mAh, 90W有线快充, 40W无线快充",
+        "os": "OriginOS 5",
+        "memory": "12GB/16GB RAM + 256GB/512GB/1TB ROM",
+        "key_features": [
+          "蔡司三大定焦大师镜头",
+          "2亿像素潜望长焦",
+          "蓝图影像双芯"
+        ],
+        "marketing_slogan": "V单——可打电话的专业相机",
+        "target_audience": "专业摄影用户",
+        "series_positioning": "专业影像Ultra旗舰"
+      }
+    ]
+  },
+  "product_lineup": {
+    "huawei_current_generation": {
+      "pura": "Pura 90 系列 (2026.4)",
+      "mate": "Mate 80 系列 (2025.11)",
+      "next_expected": "Mate 90 系列 (预计2026.9, 首发麒麟2026+鸿蒙7)"
+    },
+    "competitor_current_generation": {
+      "apple": "iPhone 18 Pro/Pro Max (预计2026.9, 首发2nm A20 Pro)",
+      "xiaomi": "小米16 Ultra (预计2025.10-2026.3)",
+      "oppo": "Find X9 Ultra (2026.4)",
+      "vivo": "X300 Ultra (2026.3)"
+    }
+  }
+}

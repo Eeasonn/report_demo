@@ -1,0 +1,38 @@
+# 智能战报系统 - Docker 部署配置
+# 用法: docker-compose up -d
+
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    container_name: sbr-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - MINIMAX_API_KEY=${MINIMAX_API_KEY:-}
+      - KIMI_API_KEY=${KIMI_API_KEY:-}
+      - LLM_PROVIDER=${LLM_PROVIDER:-minimax}  # 可选: minimax / kimi
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+    volumes:
+      - ../config:/app/config:ro
+      - ../data:/app/data:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    container_name: sbr-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
