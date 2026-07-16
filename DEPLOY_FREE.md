@@ -38,17 +38,46 @@
 | **Dockerfile Path** | `./deploy/Dockerfile.backend` |
 | **Branch** | `main` 或 `master` |
 
+### 1.5 获取 MiniMax API Key（如使用 MiniMax）
+
+根据 [MiniMax 官方文档](https://platform.minimax.io/docs/token-plan/other-tools)：
+
+1. 访问 [MiniMax 开放平台](https://platform.minimax.io/) 注册/登录
+2. 进入 **Billing > Token Plan**，复制你的 **Subscription Key**
+   - 格式为 `sk-cp-...`
+3. 或进入 **API Keys** 创建 **Pay-as-you-go API Key**
+
+MiniMax 提供两种接入协议，本项目使用 **OpenAI-Compatible** 方式：
+
+| 配置项 | 值 |
+|--------|-----|
+| Base URL | `https://api.minimax.io/v1` |
+| Model | `MiniMax-M3` |
+| API Key | 你的 Subscription Key 或 API Key |
+
+---
+
 ### 2. 设置环境变量
 
 在 Render Dashboard → 你的服务 → **Environment** 中添加：
 
+**使用 MiniMax（默认）：**
+
 ```env
-LLM_PROVIDER=kimi
-KIMI_API_KEY=sk-your-kimi-api-key
+LLM_PROVIDER=minimax
+MINIMAX_API_KEY=sk-cp-你的-minimax-key
 CORS_ORIGINS=*
 ```
 
-> 生产环境建议把 `CORS_ORIGINS` 改成你的 GitHub Pages 地址，例如 `https://yourname.github.io`。
+**使用 Kimi：**
+
+```env
+LLM_PROVIDER=kimi
+KIMI_API_KEY=sk-你的-kimi-api-key
+CORS_ORIGINS=*
+```
+
+> 生产环境建议把 `CORS_ORIGINS` 改成你的 GitHub Pages 地址，例如 `https://eeasonn.github.io`。
 
 ### 3. 等待部署完成
 

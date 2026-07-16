@@ -57,10 +57,15 @@
    - **Name**: `smart-battle-report-backend`
    - **Environment**: `Docker`
    - **Dockerfile Path**: `./deploy/Dockerfile.backend`
-5. 添加环境变量：
-   - `LLM_PROVIDER` = `kimi` 或 `minimax`
+5. 添加环境变量（二选一）：
+
+   **MiniMax（默认）：**
+   - `LLM_PROVIDER` = `minimax`
+   - `MINIMAX_API_KEY` = 你的 MiniMax Subscription Key（格式 `sk-cp-...`）
+
+   **Kimi：**
+   - `LLM_PROVIDER` = `kimi`
    - `KIMI_API_KEY` = 你的 Kimi API Key
-   - `MINIMAX_API_KEY` = 你的 MiniMax API Key（可选）
 6. 点击 **Create Web Service**
 
 Render 会自动构建并启动，等待状态变为 **Live**。
